@@ -1,0 +1,20 @@
+*{
+	box-sizing: border-box;
+}
+
+.result {
+	margin: 10px;
+	float: left;
+	max-width: 320px;
+	height: 250px;
+	border: 1px lightgrey solid;
+	border-radius: 5px;
+	padding: 10px;
+}
+.result p {
+	margin-top: 0px;
+	margin-bottom: 0;
+}
+.result img {
+	width: 100%;
+}
