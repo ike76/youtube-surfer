@@ -2,71 +2,53 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>YouTube surfer</title>
-	<script
-          src="https://code.jquery.com/jquery-3.2.1.min.js"
-          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-          crossorigin="anonymous"></script>
+	<title>YouTube Surfer</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="index.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<div class="container">
+	
 	<main role='main'>
-		<header role="banner"><h1>Youtube surfer</h1></header>
-		<form action="#" class="js-search-form">
-			<label for="query"></label>
-			<input type="text" class="js-query">
-			<button type="submit">Search</button>
-		</form>
-
-		<h2>Results</h2>
+	<div class="mx-auto">
+			<header role="banner"><h1>YouTube Surfer</h1></header>
+			<form action="#" class="js-search-form">
+				<label for="query"></label>
+				<input type="text" class="js-query">
+				<button type="submit">Search</button>
+			</form>
+	</div>
+		
+		<hr>
+<div class="results">
+		<h5>Results</h5>
+		<div class="nav-buttons">
+			<button class="btn btn-outline-primary" id="prev-button"><< prev</button> <button class="btn btn-outline-primary" id="next-button">next >></button>
+		</div>
 		<div class="js-search-results">
-			<div class="result">
-				<a href="https://www.youtube.com/watch?v=hY7m5jjJ9mM">
-					<img src="https://i.ytimg.com/vi/hY7m5jjJ9mM/mqdefault.jpg" alt="alt text">
+			<!-- <div class="result">
+				<a href="https://www.youtube.com/watch?v=hY7m5jjJ9mM" target="_blank">
+					<div class="thumbnail">
+						<img src="https://i.ytimg.com/vi/hY7m5jjJ9mM/mqdefault.jpg" alt="alt text">
+					</div>
 					<p>CATS will make you LAUGH YOUR HEAD OFF - Funny CAT compilation</p>
 				</a>
-			</div>
-			<div class="result">
-				<img src="https://i.ytimg.com/vi/hY7m5jjJ9mM/mqdefault.jpg" alt="alt text">
-				<p>CATS will make you LAUGH YOUR HEAD OFF - Funny CAT compilation</p>
-			</div>
-			<div class="result">
-				<img src="https://i.ytimg.com/vi/hY7m5jjJ9mM/mqdefault.jpg" alt="alt text">
-				<p>CATS will make you LAUGH YOUR HEAD OFF - Funny CAT compilation</p>
-			</div>
-			<div class="result">
-				<img src="https://i.ytimg.com/vi/hY7m5jjJ9mM/mqdefault.jpg" alt="alt text">
-				<p>CATS will make you LAUGH YOUR HEAD OFF - Funny CAT compilation</p>
-			</div>
-			<div class="result">
-				<img src="https://i.ytimg.com/vi/hY7m5jjJ9mM/mqdefault.jpg" alt="alt text">
-				<p>CATS will make you LAUGH YOUR HEAD OFF - Funny CAT compilation</p>
-			</div>
-			<div class="result">
-				<img src="https://i.ytimg.com/vi/hY7m5jjJ9mM/mqdefault.jpg" alt="alt text">
-				<p>CATS will make you LAUGH YOUR HEAD OFF - Funny CAT compilation</p>
-			</div>
-			<div class="result">
-				<img src="https://i.ytimg.com/vi/hY7m5jjJ9mM/mqdefault.jpg" alt="alt text">
-				<p>CATS will make you LAUGH YOUR HEAD OFF - Funny CAT compilation</p>
-			</div>
-			<div class="result">
-				<img src="https://i.ytimg.com/vi/hY7m5jjJ9mM/mqdefault.jpg" alt="alt text">
-				<p>CATS will make you LAUGH YOUR HEAD OFF - Funny CAT compilation</p>
-			</div>
-			<div class="result">
-				<img src="https://i.ytimg.com/vi/hY7m5jjJ9mM/mqdefault.jpg" alt="alt text">
-				<p>CATS will make you LAUGH YOUR HEAD OFF - Funny CAT compilation</p>
-			</div>
-			<div class="result">
-				<img src="https://i.ytimg.com/vi/hY7m5jjJ9mM/mqdefault.jpg" alt="alt text">
-				<p>CATS will make you LAUGH YOUR HEAD OFF - Funny CAT compilation</p>
-			</div>
+			</div> -->
+			
 			
 		</div>
-		
+</div>
 		
 	</main>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="index.js"></script>
+</div> <!-- end container -->
 </body>
 </html>
