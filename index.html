@@ -13,28 +13,20 @@
 	<div class="mx-auto center">
 			<header role="banner"><h1>YouTube Surfer</h1></header>
 			<form action="#" class="js-search-form">
-				<label for="query"></label>
-				<input type="text" class="js-query">
+				<label for="query"><img src="https://cdn.iconscout.com/public/images/icon/free/png-512/youtube-google-brand-logo-3029c61d3b3dc0ff-512x512.png" alt="Search You Tube "></label>
+				<input type="text" class="js-query" aria-label="Search YouTube">
 				<button type="submit">Search</button>
 			</form>
 	</div>
 		
 		<hr>
-<div class="results">
-		<h5>Results</h5>
+<div class="results" >
+		<h5 aria-live='assertive'><span id="number-results">100</span> Results for <span id="display-query"></span> </h5>
 		<div class="nav-buttons">
-			<button class="btn btn-outline-primary" id="prev-button"><< prev</button> <button class="btn btn-outline-primary" id="next-button">next >></button>
+			<button class="btn btn-outline-primary" id="prev-button" aria-label="previous results"><< prev</button> <button class="btn btn-outline-primary" id="next-button" aria-label="next results">next >></button>
 		</div>
-		<div class="js-search-results">
-			<!-- <div class="result">
-				<a href="https://www.youtube.com/watch?v=hY7m5jjJ9mM" target="_blank">
-					<div class="thumbnail">
-						<img src="https://i.ytimg.com/vi/hY7m5jjJ9mM/mqdefault.jpg" alt="alt text">
-					</div>
-					<p>CATS will make you LAUGH YOUR HEAD OFF - Funny CAT compilation</p>
-				</a>
-			</div> -->
-			
+		<div class="js-search-results" >
+	
 			
 		</div>
 </div>

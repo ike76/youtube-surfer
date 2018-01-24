@@ -40,3 +40,7 @@ main{
 	top: 5px;
 	right: 5px;
 }
+
+.js-search-form img {
+	width: 100px;
+}
