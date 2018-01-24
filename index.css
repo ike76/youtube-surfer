@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	/*border: 1px lightgrey solid;*/
 }
-main{
+.container{
 	margin-top: 50px;
 }
 .result {

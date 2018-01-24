@@ -1,8 +1,6 @@
 $(function(){
 
-function hideResults(){
-	$('.results').hide();
-}
+
 
 function renderResult (item){
 	return `<div class="result">
@@ -14,16 +12,12 @@ function renderResult (item){
 				<div class="more-channel-link"><p>More from <strong><a href="https://www.youtube.com/channel/${item.snippet.channelId}" target="_blank">${item.snippet.channelTitle}</a></strong></p></div>
 			</div>`
 
-	// return `<div class="result">
-	// 			<a href="https://www.youtube.com/watch?v=${item.id.videoId}" target="_blank">
-	// 				<div class="thumbnail" css('background-image', url("${item.snippet.thumbnails.medium.url}"))>
-						
-	// 				</div>
-	// 				<p>${item.snippet.title}</p>
-	// 			</a>
-	// 		</div>`
+
 }
 
+const store = {
+	query: '',
+}
 let query = '';
 
 function handleSubmit(){
@@ -51,9 +45,11 @@ function callGoogle(query, callback, pageToken = ''){
 };
 
 function displayResults(data){
+console.log(data);
 	const results = data.items.map(item=>{
 		return renderResult(item);
 	});
+	$('.results').prop('hidden', false);
 	setButtonTokens(data);
 	$('.js-search-results').html(results)
 }
@@ -79,7 +75,6 @@ $('.nav-buttons button').on('click', function(event){
 })
 
 handleSubmit();
-hideResults();
 
 
 

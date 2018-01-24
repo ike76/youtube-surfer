@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 	<title>YouTube Surfer</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
         <link href="index.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div class="container">
 	
-	<main role='main'>
 	<div class="mx-auto center">
 			<header role="banner"><h1>YouTube Surfer</h1></header>
 			<form action="#" class="js-search-form">
@@ -20,7 +20,8 @@
 	</div>
 		
 		<hr>
-<div class="results">
+	<main role='main'>
+<div class="results" aria-live="assertive" hidden>
 		<h5>Results</h5>
 		<div class="nav-buttons">
 			<button class="btn btn-outline-primary" id="prev-button"><< prev</button> <button class="btn btn-outline-primary" id="next-button">next >></button>
@@ -48,6 +49,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
 	<script src="index.js"></script>
 </div> <!-- end container -->
 </body>
