@@ -6,8 +6,8 @@ function hideResults(){
 
 function renderResult (item){
 	return `<div class="result">
-				<a href="https://www.youtube.com/watch?v=${item.id.videoId}" target="_blank">
-					<img src="${item.snippet.thumbnails.medium.url}" alt="alt text">
+				<a href="https://www.youtube.com/watch?v=${item.id.videoId}" target="_blank" alt="preview image">
+					<img src="${item.snippet.thumbnails.medium.url}">
 					<p>${item.snippet.title.substring(0,60)}</p>
 				</a>
 					
@@ -51,10 +51,13 @@ function callGoogle(query, callback, pageToken = ''){
 };
 
 function displayResults(data){
+	console.log(data);
 	const results = data.items.map(item=>{
 		return renderResult(item);
 	});
 	setButtonTokens(data);
+	$('#number-results').text(data.pageInfo.totalResults);
+	$('#display-query').text(query)
 	$('.js-search-results').html(results)
 }
 
